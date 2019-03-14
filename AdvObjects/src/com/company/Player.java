@@ -26,9 +26,9 @@ public class Player {
     public Player(){
         rand = new Random();
         this.playerLevel = 1;
-        health = 50;
-        defense = 10;
-        attack = 10;
+        health = 999;
+        defense = 999;
+        attack = 999;
         healthPotions=0;
     }
 
@@ -100,7 +100,7 @@ public class Player {
     private void heal(){
         if(healthPotions >0){
             healthPotions--;
-            health = health +50;
+            health = health +999;
             System.out.println("you drank one potion and restored 50 health, you now have "+health+" health");
         }
         else{
@@ -110,14 +110,14 @@ public class Player {
 
     //call when player kills an enemy (should not need to be called in main
     public void gainXP(){
-        xp++;
+        xp=xp+30;
         //if they leveled up
-        if (xp>(int) (5*Math.pow(1.3,playerLevel))){
+        if (xp>(int) (1*Math.pow(1.3,playerLevel))){
             System.out.println("you are now level: " + playerLevel);
             playerLevel++;
             healthPotions = healthPotions+5;
-            attack = attack +rand.nextInt(7)+1;
-            defense = defense + rand.nextInt(7)+1;
+            attack = attack +rand.nextInt(7)+999;
+            defense = defense + rand.nextInt(7)+999;
         }
     }
 }

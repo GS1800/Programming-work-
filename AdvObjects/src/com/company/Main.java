@@ -12,21 +12,18 @@ public class Main {
         while (Main.getHealth() >0)
         {
              Enemy Bad = new Enemy(Main.getPlayerLevel());
-             while (Bad.getHealth() >0 && Main.getPlayerLevel() >0);
+             while (Bad.getHealth() >0 && Main.getHealth() >0)
             {
                 Main.menu(Bad);
                 Bad.takeDamage(Main);
                 if (Bad.getHealth() >0)
                 {
-                    Main.takeDamage(Bad):
+                    Main.takeDamage(Bad);
                 }
             }
-            if (Main.getHealth()<=0)
-            {
-                System.out.println("Your level is " + Main.getPlayerLevel());
-                System.out.println("Your EXP is " + Main.getXp());
-            }
         }
+        System.out.println("Your EXP is " + Main.getXp());
+        System.out.println("Your level is " + Main.getPlayerLevel());
 
         //generate a new player
         //create main game loop that continues until the player has no health
