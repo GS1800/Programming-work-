@@ -4,35 +4,36 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        Animal myAnimal = new Animal("cat", "Cannoli");
+        Animal myAnimal = new Animal("cat", " Ebenizer");
         myAnimal.MakeSound();
         myAnimal.PrintName();
-
-        Dog myDog = new Dog("Biscotti", true);
+        System.out.println("-----------------");
+        Dog myDog = new Dog("Peper", true);
         myDog.MakeSound();
         myDog.PrintName();
         myDog.PlayFetch();
-        myDog.getDockedTail();
-
-        Cat myCat = new Cat("Penguin");
+        Boolean Docked =myDog.getDockedTail();
+        System.out.println(Docked);
+        System.out.println("-----------------");
+        Cat myCat = new Cat("Work");
         myCat.MakeSound();
         myCat.PrintName();
         myCat.BeHappy();
         myCat.SeeLaser();
-
-        OrangeTabby myOrangeTabby = new OrangeTabby("Riddler");
+        System.out.println("-----------------");
+        OrangeTabby myOrangeTabby = new OrangeTabby("Knockoff Garfield");
         myOrangeTabby.MakeSound();
         myOrangeTabby.PrintName();
         myOrangeTabby.BeHappy();
         myOrangeTabby.LayOnLap();
         myOrangeTabby.SeeLaser();
-
-        RussianBlue myRussianBlue = new RussianBlue("Ja'Crispy");
+        System.out.println("-----------------");
+        RussianBlue myRussianBlue = new RussianBlue("Vladimus Von Hack'N'Slash");
         myRussianBlue.MakeSound();
         myRussianBlue.PrintName();
         myRussianBlue.BeHappy();
         myRussianBlue.SeeLaser();
-
+        System.out.println("-----------------");
         Garfield myGarfield = new Garfield();
         myGarfield.MakeSound();
         myGarfield.PrintName();

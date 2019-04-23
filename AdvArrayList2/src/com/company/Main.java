@@ -26,7 +26,6 @@ public class Main {
                             break;
                         } else {
                             usernameExist = false;
-
                         }
                         k = k + 1;
                     }
@@ -52,7 +51,8 @@ public class Main {
                         if (Username.equals(UsernameList.get(k))) {
                             usernameExist = true;
                             break;
-                        } else {
+                        }
+                        else {
                             usernameExist = false;
 
                         }
@@ -65,11 +65,15 @@ public class Main {
                             System.out.println("Welcome" + Username);
                             System.exit(0);
                         }
-                    } else {
+                        else {
+                            System.out.println("Sorry your password does not mathe the username");
+                            break;
+                        }
+                    }
+                    else {
                         System.out.println("Please enter a password ");
                         String Password = console.nextLine();
-                        //UsernameList.add(Username);
-                        //PasswordList.add(Password);
+                        System.out.println("Sorry that account does not exist");
                         break;
 
 
